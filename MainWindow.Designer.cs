@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            levaLabel = new Label();
+            levaTextBox = new TextBox();
+            SuspendLayout();
+            // 
+            // levaLabel
+            // 
+            levaLabel.AutoSize = true;
+            levaLabel.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            levaLabel.Location = new Point(163, 52);
+            levaLabel.Name = "levaLabel";
+            levaLabel.Size = new Size(76, 45);
+            levaLabel.TabIndex = 0;
+            levaLabel.Text = "leva";
+            // 
+            // levaTextBox
+            // 
+            levaTextBox.Location = new Point(351, 65);
+            levaTextBox.Name = "levaTextBox";
+            levaTextBox.Size = new Size(186, 31);
+            levaTextBox.TabIndex = 1;
+            // 
+            // MainWindow
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1226, 450);
+            Controls.Add(levaTextBox);
+            Controls.Add(levaLabel);
+            Name = "MainWindow";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label levaLabel;
+        private TextBox levaTextBox;
     }
 }
